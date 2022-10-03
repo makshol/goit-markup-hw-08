@@ -546,8 +546,8 @@ footer .logo {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: auto;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -558,6 +558,11 @@ footer .logo {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .close-btn {
@@ -655,6 +660,7 @@ footer .logo {
   color: var(--nav-text-color);
 }
 .register-form__desc {
+  font-size: 12px;
   line-height: 1.71;
   color: var(--undertitle-text-color);
 }
@@ -721,6 +727,7 @@ footer .logo {
   border-color: var(--nav-text-color);
 }
 .form-field__textarea {
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
@@ -754,11 +761,6 @@ footer .logo {
 
 .comment {
   margin-bottom: 20px;
-}
-
-textarea {
-  width: 448px;
-  height: 120px;
 }
 
 .hero {
