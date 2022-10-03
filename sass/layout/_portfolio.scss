@@ -2,9 +2,16 @@
 
 .filter-btn-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
   justify-content: center;
+
+
+@media screen and (max-width: 767px) {
+  width: 400px;
+  justify-content: start;
+}
 }
 
 .button-portfolio {
@@ -24,6 +31,10 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:first-of-type {
+    padding: 6px 25px;
+  }
+
   &.active {
     color: var(--hero-text-color);
     background-color: var(--nav-text-color);
@@ -40,14 +51,36 @@
 // projects
 
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+ 
+
+  @media screen and (min-width:768px) {
+    display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+  }
 }
 
 .project-item {
   border: 1px solid #eeeeee;
+  
+  width: 100%;
+  display: flex;
+
+
+
+&:not(:last-child) {
+  @media screen  and (max-width:767px) {
+    margin-bottom:30px;
+  }
+}
+
+  @media screen and (min-width:768px) {
+width: calc((100% - 30px) / 2);
+  }
+
+@media screen and (min-width:1200px) {
   width: calc((100% - 60px) / 3);
+}
 
   &__link {
     display: block;
@@ -72,7 +105,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      padding: 63px 24px;
+      padding: 77px 24px;
       font-size: 18px;
       line-height: 1.56;
       transform: translateY(100%);
@@ -80,6 +113,16 @@
       transition-property: transform;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen  and (min-width:768px) {
+        padding-top: 49px;
+        padding-bottom: 77px;
+      }
+
+             @media screen and (min-width:1200px) {
+               padding: 63px 24px;
+              
+             }
   }
 
   &__link:hover .project-item__text,
