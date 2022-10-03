@@ -1,5 +1,16 @@
-.about {
-    padding-top: 0;   
+
+    @media screen  and (max-width:1199px) {
+        .about {
+        display:none;
+          }
+    
+}
+
+@media screen and (min-width:1200px) {
+    .about {
+        padding-top: 0px;
+    }
+    
 }
 
 .about-list {
