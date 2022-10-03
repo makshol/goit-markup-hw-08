@@ -424,17 +424,23 @@ footer .logo {
 }
 
 .hero-title {
-  width: 696px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
   color: var(--hero-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .button {
@@ -446,9 +452,14 @@ footer .logo {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  padding: 10px 32px;
+  padding: 10px 24px;
   border-radius: 4px;
   border: none;
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 10px 32px;
+  }
 }
 
 .backdrop {
@@ -693,8 +704,8 @@ textarea {
 
 .hero {
   background-color: var(--hero-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/background-hero.jpg);
   background-image: linear-gradient(to right, var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/background-hero.jpg);
@@ -702,9 +713,16 @@ textarea {
   background-size: cover;
   background-position: center;
   max-width: 1600px;
-  height: 600px;
+  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 @media screen and (min-width: 768px) {
