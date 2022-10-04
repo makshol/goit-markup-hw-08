@@ -5,7 +5,18 @@
     padding-bottom: 118px;
     text-align: center;
     background-image: linear-gradient(to right, var(--hero-overlay-color), var(--hero-overlay-color)),
-        url(../images/background-hero.jpg);
+        url(../images/mobile/hero/hero@1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, var(--hero-overlay-color), var(--hero-overlay-color)),
+                    url(../images/mobile/hero/hero@2x.jpg);
+            }
+
+
+            
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,11 +25,34 @@
     margin-left: auto;
     margin-right: auto;
 
+    @media screen and (min-width:768px) {
+        background-image: linear-gradient(to right, var(--hero-overlay-color), var(--hero-overlay-color)),
+                url(../images/tablet/hero/hero@1x.jpg);
+        
+                @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, var(--hero-overlay-color), var(--hero-overlay-color)),
+                    url(../images/tablet/hero/hero@2x.jpg);
+            }
+
+    }
+
     @media screen and (min-width:1200px) {
         max-width: 1600px;
         padding-top: 200px;
         padding-bottom: 200px;
+        background-image: linear-gradient(to right, var(--hero-overlay-color), var(--hero-overlay-color)),
+                url(../images/desktop/hero/hero@1x.jpg);
         
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, var(--hero-overlay-color), var(--hero-overlay-color)),
+                    url(../images/desktop/hero/hero@2x.jpg);
+            }
     }
 }
 
