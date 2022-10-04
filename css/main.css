@@ -92,7 +92,6 @@ address {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -214,6 +213,8 @@ address {
   right: 15px;
   border: 0px;
   background-color: transparent;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu-btn-close {
@@ -231,6 +232,8 @@ address {
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--primary-text-color);
 }
 .mobile-menu__link--current {
@@ -442,6 +445,8 @@ address {
           align-items: center;
   background-color: transparent;
   border: 0px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -718,6 +723,12 @@ footer .logo {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding: 93px 10px;
+    overflow-y: scroll;
+  }
+}
 
 .is-hidden.backdrop {
   opacity: 0;
@@ -726,7 +737,7 @@ footer .logo {
 }
 
 .modal {
-  width: 450px;
+  display: inline-block;
   height: auto;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -738,6 +749,11 @@ footer .logo {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1316,8 +1332,8 @@ footer .logo {
   padding: 77px 24px;
   font-size: 18px;
   line-height: 1.56;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(110%);
+          transform: translateY(110%);
   background: rgba(33, 150, 243, 0.9);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
