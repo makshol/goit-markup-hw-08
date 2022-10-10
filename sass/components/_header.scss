@@ -1,7 +1,5 @@
 .header {
   border: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 24px;
 
   &__container {
     display: flex;
@@ -81,6 +79,7 @@
   }
 
   &__link {
+    font-size: 12px;
     color: var(--undertitle-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -91,6 +90,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    @media screen and (min-width:1200px) {
+      font-size: 14px;
+    }
   }
 }
 

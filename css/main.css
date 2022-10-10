@@ -159,10 +159,21 @@ address {
   color: var(--nav-text-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   text-decoration: none;
   margin-right: 93px;
+  padding: 16px 0;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding: 25px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
 }
 .logo__accent {
   color: var(--logo-color);
@@ -304,8 +315,6 @@ address {
 
 .header {
   border: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header__container {
   display: -webkit-box;
@@ -404,6 +413,7 @@ address {
   margin-right: 10px;
 }
 .contact-list__link {
+  font-size: 12px;
   color: var(--undertitle-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -421,6 +431,11 @@ address {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__link {
+    font-size: 14px;
+  }
 }
 
 .header-nav__link:hover,
@@ -678,6 +693,11 @@ footer .logo {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-title {
